@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.wrapper{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;   
+}
+ul a{
+    padding: 0 1em;
+    text-decoration: none;
+     color: #fff;
+}
+
+#hero{
+    height: 600px;
+    background-color: antiquewhite;
+    background-image: url(../images/hands-typing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    filter: grayscale(70%);
+    display: flex;
+}
+
+h1{
+    max-width: 60%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0.5px 0.5px 5px black;
+    padding: 20px;
+    align-self: center;
+    margin: auto;
+}
+
+#about-me .wrapper{
+    display: flex;
+
+    div{
+        padding: 3em 0;
+    }
+
+    img{
+        width: 33%;
+    }
+}
+
+#services{
+    background-color: #fafafa;
+    padding: 2rem;
+    h2{
+        text-align: center;
+        
+    }
+
+    div div{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 3rem;
+          
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: white;
+        padding: 1rem;
+        padding-top: 0;
+
+        a{
+            background-color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: auto;
+            align-self: start;   
+            font-size: 14px;       
+        }
+
+            a:link, 
+            a:visited {
+                color: #fff;
+            }
+        }
+}
+
+#work{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 3rem;
+
+    h2{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .images{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        
+    }
+
+    .img1{
+        grid-area: 1 / auto / 1 / span 3;
+    }
+
+    .img2{
+        grid-area: 1 / auto / 1 / span 3;
+    }
+
+    .img3{
+        grid-area: 2 / 1 / auto / span 2;
+    }
+
+    .img4{
+        grid-area: 2 / 3 / auto / span 2;
+    }
+    
+    .img5{
+        grid-area: 2 / 5 / auto / span 2;
+    }
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 1em;
+}
+
+
